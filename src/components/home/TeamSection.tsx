@@ -34,7 +34,8 @@ const creativeTeam = [
     name: "Marcus Rodriguez",
     role: "Senior Designer",
     image:
-      "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?t=st=1763024244~exp=1763027844~hmac=702414b4aaf7e43a66365c4169f07041ffb60abe3f254b5d8938d176e2538a1c&w=1480",
+      "https://img.freepik.com/free-photo/handsome-bearded-businessman-rubbing-hands-having-deal_176420-18778.jpg?t=st=1763035105~exp=1763038705~hmac=e98421e8eea88a3e1256e332dc798c33e77ae52d238d218136fb8155d8a41dcc&w=1480",
+
     bio: "Specialized in logo design and brand identity systems that tell compelling stories and create lasting impressions for startups and enterprises.",
     skills: [
       "Logo Design",
@@ -51,7 +52,7 @@ const creativeTeam = [
     name: "Emily Watson",
     role: "UI/UX Designer",
     image:
-      "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?t=st=1763024244~exp=1763027844~hmac=702414b4aaf7e43a66365c4169f07041ffb60abe3f254b5d8938d176e2538a1c&w=1480",
+      "https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?ga=GA1.1.862679258.1757229836&semt=ais_hybrid&w=740&q=80",
     bio: "Passionate about creating intuitive user experiences and beautiful interfaces that solve real user problems and drive business growth.",
     skills: [
       "Figma",
@@ -79,24 +80,7 @@ const creativeTeam = [
     ],
     projects: 42,
     experience: "4+ years",
-  },
-  {
-    id: 5,
-    name: "Jessica Kim",
-    role: "Brand Strategist",
-    image:
-      "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?t=st=1763024244~exp=1763027844~hmac=702414b4aaf7e43a66365c4169f07041ffb60abe3f254b5d8938d176e2538a1c&w=1480",
-    bio: "Helping brands find their unique voice and connect with their target audience through strategic positioning and market insights.",
-    skills: [
-      "Market Research",
-      "Content Strategy",
-      "Brand Positioning",
-      "Analytics",
-      "Consumer Insights",
-    ],
-    projects: 78,
-    experience: "7+ years",
-  },
+  }
 ];
 
 const TeamSection = () => {

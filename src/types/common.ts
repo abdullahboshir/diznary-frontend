@@ -1,6 +1,7 @@
  
 import { USER_ROLE } from "@/constant/role";
-import type { IconType } from "react-icons";
+import { LucideIcon } from "lucide-react";
+
 
 
 export type TMeta = {
@@ -15,7 +16,7 @@ export type TUserRole = keyof typeof USER_ROLE;
 export interface DrawerItem {
   title: string;
   path?: string;
-  icon?: IconType;
+  icon?: LucideIcon;
   children?: DrawerItem[];
 }
 

@@ -2,19 +2,19 @@
 import { USER_ROLE } from "@/constant/role";
 import { DrawerItem, TUserRole } from "@/types";
 import {
-  MdAdminPanelSettings,
-  MdOutlineSupervisorAccount,
-  MdCampaign,
-  MdPersonAddAlt,
-  MdWarehouse,
-  MdDining,
-  MdAccountCircle,
-  MdNotifications,
-  MdReport,
-  MdHelp,
-  MdBusiness,
-  MdLockReset,
-} from "react-icons/md";
+  Shield,           // MdAdminPanelSettings
+  Users,            // MdOutlineSupervisorAccount
+  Megaphone,        // MdCampaign
+  UserPlus,         // MdPersonAddAlt
+  Warehouse,        // MdWarehouse
+  Utensils,         // MdDining
+  User,             // MdAccountCircle
+  Bell,             // MdNotifications
+  Flag,             // MdReport
+  HelpCircle,       // MdHelp
+  Building,         // MdBusiness
+  LockKeyhole,      // MdLockReset
+} from "lucide-react";
 
 export const drawerItems = (role: TUserRole): DrawerItem[] => {
   const roleMenus: DrawerItem[] = [];
@@ -23,70 +23,70 @@ export const drawerItems = (role: TUserRole): DrawerItem[] => {
     {
       title: "Profile",
       path: `${role}/profile`,
-      icon: MdAccountCircle,
+      icon: User,
     },
     {
       title: "Notifications",
       path: `${role}/notifications`,
-      icon: MdNotifications,
+      icon: Bell,
     },
     {
       title: "Change Password",
       path: `${role}/change-password`,
-      icon: MdLockReset,
+      icon: LockKeyhole,
     },
     {
       title: "Dining Report",
       path: `${role}/dining-report`,
-      icon: MdReport,
+      icon: Flag,
     },
     {
       title: "Support / Help",
       path: `${role}/support`,
-      icon: MdHelp,
+      icon: HelpCircle,
     },
   ];
 
   const adminSharedMenus: DrawerItem = {
     title: "User Management",
-    icon: MdAdminPanelSettings,
+    icon: Shield,
     children: [
       {
         title: "Admin",
         path: `${role}/admin`,
-        icon: MdAdminPanelSettings,
+        icon: Shield,
       },
       {
         title: "Manager",
         path: `${role}/manager`,
-        icon: MdOutlineSupervisorAccount,
+        icon: Users,
       },
       {
         title: "Moderator",
         path: `${role}/moderator`,
-        icon: MdPersonAddAlt,
+        icon: UserPlus,
       },
       {
         title: "Student",
         path: `${role}/student`,
-        icon: MdPersonAddAlt,
+        icon: UserPlus,
       },
     ],
   };
 
   const diningMenu: DrawerItem = {
     title: "Dining",
-    icon: MdDining,
+    icon: Utensils,
     children: [
       {
         title: "Dining",
         path: `${role}/dining`,
-        icon: MdDining,
+        icon: Utensils,
       },
       {
         title: "Daily Reports",
         path: `${role}/daily-reports`,
-        icon: MdWarehouse,
+        icon: Warehouse,
       },
     ],
   };
@@ -97,24 +97,24 @@ export const drawerItems = (role: TUserRole): DrawerItem[] => {
            {
           title: "Dashboard",
           path: `${role}/notice`,
-          icon: MdCampaign,
+          icon: Megaphone,
         },
         adminSharedMenus,
         diningMenu,
         {
           title: "Notices",
           path: `${role}/notice`,
-          icon: MdCampaign,
+          icon: Megaphone,
         },
         {
           title: "Hall",
           path: `${role}/hall`,
-          icon: MdWarehouse,
+          icon: Warehouse,
         },
         {
           title: "Audit Logs",
           path: `${role}/audit-logs`,
-          icon: MdBusiness,
+          icon: Building,
         }
       );
       break;
@@ -123,7 +123,7 @@ export const drawerItems = (role: TUserRole): DrawerItem[] => {
       roleMenus.push(adminSharedMenus, diningMenu, {
         title: "Notices",
         path: `${role}/notice`,
-        icon: MdCampaign,
+        icon: Megaphone,
       });
       break;
 
@@ -135,12 +135,12 @@ export const drawerItems = (role: TUserRole): DrawerItem[] => {
       roleMenus.push({
         title: "My Meals",
         path: `${role}/my-meals`,
-        icon: MdDining,
+        icon: Utensils,
       });
       roleMenus.push({
         title: "Payment History",
         path: `${role}/payment-history`,
-        icon: MdDining,
+        icon: Utensils,
       });
       break;
   }

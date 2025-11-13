@@ -9,9 +9,8 @@ import Link from "next/link";
 import Swal from "sweetalert2";
 import FormWrapper from "@/components/form/FormWrapper";
 import InputField from "@/components/form/InputField";
-import SocialLogin from "./SocialLogin";
 import loginImg from "../../../../public/images/login/fresh-cucumber-slices-garnished-with-green-herbs-arranged-in-a-bowl-perfect-for-healthy-meals-and-recipes-photo.jpeg";
-import logo from "../../../../public/images/logo.svg";
+import logo from "../../../../public/images/logo.png";
 import { Login } from "@/services/auth/authService";
 // import Spinner from "@/components/ui/spinner";
 
@@ -69,7 +68,7 @@ const LoginForm = () => {
               </p>
             </div>
             <div className="text-center">
-              <SocialLogin />
+              {/* <SocialLogin /> */}
             </div>
           </div>
         </div>

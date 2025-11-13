@@ -81,6 +81,7 @@ const Header = () => {
 
         {/* Right: Navigation */}
         <div className="flex gap-x-4">
+            <ThemeModeToggle/>
           <Button
             variant={"outline"}
             className="px-6! font-bold flex justify-center items-center rounded-full border border-primary"
@@ -94,6 +95,8 @@ const Header = () => {
           >
             Sign Up <LogIn />
           </Button>
+
+        
         </div>
       </div>
     </header>

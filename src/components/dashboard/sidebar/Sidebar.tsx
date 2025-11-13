@@ -5,8 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { drawerItems } from "@/config/drawerItems";
 import SidebarItem from "./SidebarItems";
-import { USER_ROLE } from "@/constant/role";
-import { cn } from "@/lib/utils";
+
 
 const SideBar = ({ onItemClick }: { onItemClick?: () => void }) => {
   const [userRole, setUserRole] = useState("");
