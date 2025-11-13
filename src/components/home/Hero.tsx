@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Header from "../layout/Header";
 import { Button } from "../ui/button";
 
@@ -26,14 +25,16 @@ export function Hero() {
           <div className="flex gap-x-4">
             <Button
               variant={"secondary"}
-              className="px-6! bg-black text-chart-4 font-bold flex justify-center items-center rounded-full border border-primary"
+              size={'lg'}
+              className="px-6! bg-black text-chart-4 font-bold flex justify-center items-center rounded-full border border-primary text-lg hover:text-black"
             >
               Get Started
             </Button>
 
             <Button
               variant={"outline"}
-              className="px-6! font-bold flex justify-center items-center rounded-full border border-primary"
+              size={'lg'}
+              className="px-6! font-bold flex justify-center items-center rounded-full border border-primary text-lg"
             >
               Consultation free
             </Button>
