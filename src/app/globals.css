@@ -2,13 +2,15 @@
 @import "tw-animate-css";
 
 
+/* Bold */
 @font-face {
   font-family: "Glatic";
-  src: url("/fonts/Glatic-Regular.woff2") format("woff2");
-  font-weight: 400;
+  src: url("/fonts/Glatic-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -53,6 +55,7 @@
 }
 
 :root {
+   --font-glatic: "Glatic", sans-serif;
   --radius: 0.625rem;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -124,9 +127,12 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    font-family: "Poppins", "Glatic", system-ui, sans-serif;
+    font-family: "Glatic", "Poppins", system-ui, sans-serif;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
+
+
