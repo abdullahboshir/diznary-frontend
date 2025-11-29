@@ -37,10 +37,10 @@ const ProductCard = ({
   <CardContent className="h-full flex flex-col group-hover:text-white">
     {/* Icons Header */}
     <div className="flex justify-between items-center mb-4">
-      <span className="bg-black group-hover:bg-chart-4 rounded p-2 transition-colors duration-300">
+      <span className="bg-black group-hover:bg-purple-500 rounded p-2 transition-colors duration-300">
         <IconStart className="text-white group-hover:text-black transition-colors duration-300" size={16} />
       </span>
-      <span className="bg-black group-hover:bg-chart-4 rounded p-2 transition-colors duration-300">
+      <span className="bg-black group-hover:bg-purple-500 rounded p-2 transition-colors duration-300">
         <IconEnd className="text-white group-hover:text-black transition-colors duration-300" size={16} />
       </span>
     </div>
@@ -57,8 +57,8 @@ const ProductCard = ({
 
     {/* Stats */}
     <div className="flex items-center justify-center mt-4 pt-3 border-t group-hover:border-white/30">
-      <StatsIcon className="mr-2 h-4 w-4 group-hover:text-chart-4" />
-      <span className="text-sm font-medium group-hover:text-chart-4">{stats}</span>
+      <StatsIcon className="mr-2 h-4 w-4 group-hover:text-purple-500" />
+      <span className="text-sm font-medium group-hover:text-purple-500">{stats}</span>
     </div>
   </CardContent>
 </Card>

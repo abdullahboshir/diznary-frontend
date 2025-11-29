@@ -168,7 +168,7 @@ const TeamSection = () => {
 
           <div className="flex flex-col items-center justify-center gap-1">
             {/* Stats */}
-            <div className="grid grid-cols-4 gap-6 w-full mb-10">
+            <div className="grid grid-cols-4 gap-6 w-full mb-10 px-9">
               <div className="text-center p-4 bg-white rounded-lg">
                 <div className="text-2xl font-bold text-primary">50+</div>
                 <div className="text-sm text-muted-foreground">Projects</div>

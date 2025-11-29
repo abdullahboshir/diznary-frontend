@@ -32,12 +32,6 @@ const menuItems = [
       "For sighted users to preview content available behind a link.",
   },
   {
-    title: "Services",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
     title: "Portfolio",
     href: "/docs/primitives/scroll-area",
     description: "Visually or semantically separates content.",
@@ -46,23 +40,30 @@ const menuItems = [
     title: "Shope",
     href: "/docs/primitives/tabs",
     description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+  },
+  {
+    title: "Services",
+    href: "/docs/primitives/progress",
+    style: 'text-purple-700',
+    description:
+      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
 ];
 
 const Header = () => {
   return (
-    <header className="w-full bg-background p-3 px-10">
+    <header className="w-full bg-white p-2 px-10 z-10">
       <div className="mx-auto flex items-center justify-between">
         {/* Left: Logo */}
         <div className="shrink-0">
-          <Link href="/" className="text-2xl font-bold text-primary ">
-            <Image src={logo.src} alt="logo" width={150} height={150} />
+          <Link href="/" className="text-2xl font-bold text-primary">
+            <Image src={logo.src} alt="logo" width={170} height={170} />
           </Link>
         </div>
 
         {/* Center: Search Bar with icon */}
-        <div className="relative flex-1 max-w-md mx-5">
+        <div className="relative flex-1 max-w-md mx-5 ml-30">
           <NavigationMenu>
             <NavigationMenuList>
               {menuItems.map((item, i) => (
@@ -71,7 +72,7 @@ const Header = () => {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <Link href={item.href}>{item.title}</Link>
+                    <Link href={item.href} className={`${item.style} bg-white`}>{item.title}</Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               ))}
@@ -84,17 +85,17 @@ const Header = () => {
             <ThemeModeToggle/>
           <Button
             variant={"outline"}
-            className="px-6! font-bold flex justify-center items-center rounded-full border border-primary"
+            className="px-6! font-bold flex justify-center items-center rounded-full border border-primary bg-white"
           >
             Login <LogIn />
           </Button>
 
-          <Button
+          {/* <Button
             variant={"outline"}
             className="px-6! font-bold flex justify-center items-center rounded-full border border-primary"
           >
             Sign Up <LogIn />
-          </Button>
+          </Button> */}
 
         
         </div>

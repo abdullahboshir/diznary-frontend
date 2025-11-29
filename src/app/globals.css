@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "tw-animate-css";
+
 
 
 /* Bold */
@@ -134,5 +134,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+
 
 
